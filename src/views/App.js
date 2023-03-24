@@ -1,5 +1,22 @@
-import logo from './logo.svg';
-import './App.css';
+import logo from "./logo.svg";
+import "./App.scss";
+/**
+ * components:
+ *  class component
+ *  function
+ *    function: "function App ()"
+ *    arrow: "const App = () =>"
+ */
+import React from "react";
+class ComponentTest extends React.Component {
+  render() {
+    return (
+      <div>
+        <h3>Test component</h3>
+      </div>
+    );
+  }
+}
 
 function App() {
   return (
@@ -17,6 +34,7 @@ function App() {
         >
           Learn React
         </a>
+        <ComponentTest />
       </header>
     </div>
   );
